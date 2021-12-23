@@ -23,9 +23,10 @@ const exercisesRouter = require("./routes/exercises");
 const usersRouter = require("./routes/users");
 app.use("/users", usersRouter);
 app.use("/exercises", exercisesRouter);
-app.use("/", (req, res) => {
-  res.send("Welcome to Exercise API");
-});
+
+// app.use("/", (req, res) => {
+//   res.send("Welcome to Exercise API");
+// });
 
 app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
