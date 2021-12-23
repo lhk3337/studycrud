@@ -24,7 +24,7 @@ const usersRouter = require("./routes/users");
 app.use("/users", usersRouter);
 app.use("/exercises", exercisesRouter);
 app.use("/", (req, res) => {
-  res.send("Hello world");
+  res.send("Welcome to Exercise API");
 });
 
 app.listen(port, () => {
