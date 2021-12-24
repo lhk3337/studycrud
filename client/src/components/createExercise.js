@@ -15,7 +15,7 @@ const CreateExercise = () => {
   useEffect(() => {
     axios.get("https://ancient-wave-06595.herokuapp.com/users").then((response) => {
       if (response.data.length > 0) {
-        const username = response.data.reverse().map((user) => user.username);
+        const username = response.data.map((user) => user.username);
         setUsers(username);
         setUsername(response.data[0].username);
       }

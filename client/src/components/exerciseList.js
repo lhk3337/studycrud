@@ -25,7 +25,7 @@ const ExercisesList = () => {
     axios
       .get("https://ancient-wave-06595.herokuapp.com/exercises/")
       .then((response) => {
-        setExrcises(response.data.reverse());
+        setExrcises(response.data);
       })
       .catch((error) => {
         console.log(error);
